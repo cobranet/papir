@@ -1,0 +1,6 @@
+class Paperback
+  def initialize
+    # The first row of offering of cards
+    @offer_rows = [:stack, :alt ]
+    @deck = Card.all
+  end

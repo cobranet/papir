@@ -1,0 +1,6 @@
+<defs>
+ <linearGradient id="brown" x1="50%" y1="0%" x2="10%" y2="0%" spreadMethod="reflect">
+   <stop offset="0%"   stop-color="rgba(243,226,199,1)"/>
+   <stop offset="100%" stop-color="rgba(193,158,103,1)"/>
+ </linearGradient>
+</defs>

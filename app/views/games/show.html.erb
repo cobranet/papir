@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row card-shop">
+    <%  2.times do |row| %>
+    <div class="row card-row">
+      <% 7.times do |col| %>
+          <%if @p.offer[row][col] %>
+            <%= render partial: 'card', :locals => { :card => @p.offer[row][col].last } %>
+	  <% end %>
+      <% end %>
+      </div>  
+    <% end %>    
+  </div>
+  <div class="row place">
+  </div>
+
+  <div class="row hand">
+    <%@p.hand.each do |c|%>
+      <%= render partial: 'card', :locals => { :card => c } %>
+    <%end%>
+ </div>
+</div>

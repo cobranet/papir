@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require jquery.easing.min
+//= require wow.min
+//= require jquery.fittext.js
+//= require creative.js
+
+

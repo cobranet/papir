@@ -1,0 +1,5 @@
+<ul>
+  <% lang.each do |l| %>
+  <%= link_to l.name, set_language_index_path(:id=>l.id), :class =>  "btn btn-primary btn-xl page-scroll", :method => "POST" %>
+  <% end %>
+</ul>

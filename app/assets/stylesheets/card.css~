@@ -1,0 +1,71 @@
+.card {
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    min-height: 60px;
+    witdh:300px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.2);
+    min-width: 13%;
+}
+.card-row {
+    width: 100%;
+    border: 1px solid black;
+    align: center;
+			    
+}
+
+.color-2 {
+    background-color: darkorange;
+}
+
+.color-3 {
+    background-color: #85582A;
+}
+
+.color-4 {
+    background-color:purple;
+}
+
+.color-5 {
+    background-color: navy;
+}
+
+.color-6 {
+    background-color:maroon;
+}
+
+.color-7 {
+    background-color: red;
+}
+.color-8 {
+    background-color: teal;
+}
+
+
+
+.color-3 {
+    background-color: #2A582A;
+}
+
+.score {
+    color: orange;
+    text-align: right;
+    padding-right:4px;
+}
+.ability {
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+.cost {
+    padding-left: 6px;
+    color: yellow;
+}
+
+.letter {
+    color: yellow;
+    font-size: 60px;
+    text-align: center;
+}

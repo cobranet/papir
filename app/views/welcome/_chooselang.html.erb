@@ -1,0 +1,7 @@
+<ul>
+  <% lang.each do |l| %>
+    <div class="col-md-6 chooselang ">
+      <%= link_to l.name, games_path(:language=>l.id), :class =>  "btn  btn-choose page-scroll", :method => "POST" %>
+    </div>
+  <% end %>
+</ul>

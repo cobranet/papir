@@ -1,0 +1,12 @@
+class Pback
+  attr_accessor :offer_rows, :offer_cols
+  def initialize
+    # The first row of offering of cards
+    @offer_rows = [:stack, :alt ]
+    @offer_cols = [:c2,:c3,:c4,:c5,:c6,:c7,:c8]
+  end
+
+  def self.deck
+    OfferCard.all
+  end
+end
