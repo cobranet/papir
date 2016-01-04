@@ -1,0 +1,5 @@
+<div class="row hand">
+  <%p.hand.each do |c|%>
+     <%= render partial: 'card', :locals => { :card => c } %>
+  <%end%>
+</div>

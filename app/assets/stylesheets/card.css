@@ -8,11 +8,6 @@
     box-shadow: 0 0 10px rgba(10, 10, 10, 0.2);
     min-width: 13%;
 }
-.card-row {
-    width: 100%;
-    align: center;
-			    
-}
 
 .color-0 {
     background-color: darkgray;

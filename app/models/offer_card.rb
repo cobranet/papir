@@ -2,7 +2,7 @@ class OfferCard
   attr_accessor :id, :letters, :score, :ability, :cost, :type
   @@TYPES = [:offer, :common, :wild ]
   @@COMMON = ["A","E","I","O","?","?"]
-  @@STARTER = ["R","S","T","L","N","?","?","?","?","?","?"]
+  @@STARTER = ["R","S","T","L","N","?","?","?","?","?"]
   @@STARTER_ABILITY = [ "starter","starter","starter","starter","starter","wild","wild","wild","wild","wild"]
   @@OFFER =  { 2=> ["A","A","E","E","I","I","O","O"],
               3 => ["AN","AT","EN","ER","ES","IN","ON","RE","TE","TI","L","L","N","S","S","T","T"],
