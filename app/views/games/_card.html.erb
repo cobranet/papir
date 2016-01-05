@@ -1,6 +1,14 @@
-<div id="<%=card.id%>" class="card card-centered color-<%=card.cost%> col-xs-1">
-  <div class="row score"><%= card.score %></div>			   
-  <div class="row letter"><%= card.letters %></div>
-  <div class="row ability">  <%= "#{card.ability}".html_safe %></div>
-  <div class="row cost"> <%= "#{card.cost}$" %> </div>
+<div id="<%=card.id%>" class="card card-centered color-<%=card.color%> <%=card.type %>   col-xs-1">
+
+  <%if card.type == :empty %>
+    <div class="row score">  <%= "&nbsp".html_safe %> </div>
+    <div class="row letter"><%= "&nbsp".html_safe %></div>
+    <div class="row ability"><%= "&nbsp".html_safe %></div>
+    <div class="row cost"><%= "&nbsp".html_safe %></div>
+  <%else%>
+     <div class="row score"><%= card.score %></div>			   
+     <div class="row letter"><%= card.letters %></div>
+     <div class="row ability">  <%= "#{card.ability}".html_safe %></div>
+     <div class="row cost"> <%= "#{card.cost}$" %> </div>
+  <%end%>
 </div>  

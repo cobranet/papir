@@ -1,6 +1,6 @@
 class OfferCard
   attr_accessor :id, :letters, :score, :ability, :cost, :type
-  @@TYPES = [:offer, :common, :wild ]
+  @@TYPES = [:offer, :common, :wild,:empty]
   @@COMMON = ["A","E","I","O","?","?"]
   @@STARTER = ["R","S","T","L","N","?","?","?","?","?"]
   @@STARTER_ABILITY = [ "starter","starter","starter","starter","starter","wild","wild","wild","wild","wild"]
@@ -13,6 +13,7 @@ class OfferCard
               8 => ["F","G","H","J","J","K","Q","Q","Q","V","W","X","X","X","Y","Z"]}
   
   def initialize(letter)
+    @type =  letter[:type]
     @id = letter[:id]
     @letters = letter[:letters]
     @score = letter[:score]
@@ -39,6 +40,7 @@ class OfferCard
     ids = 100
     @@COMMON.each do |c|
       a << OfferCard.new( { id: ids,
+                            type: :common,
                           letters: c,
                           score: 0,
                           ability: "&nbsp",
@@ -47,6 +49,21 @@ class OfferCard
     end
     a
   end  
+  def color
+    if self.type == :empty
+      return "empty"
+    else
+      return self.cost
+    end
+  end
+  def self.empty
+    OfferCard.new ( { id: 1000,
+                      type: :empty,
+                      letters: " ",
+                      score: 0,
+                      ability: "empty",
+                      cost: 0 })
+  end
   
   def self.all_offer
     a = []
@@ -55,7 +72,8 @@ class OfferCard
       a[i-2]= []
       @@OFFER[i].each do |letters| 
         a[i-2] << OfferCard.new( { id: ids,
-                          letters: letters,
+                                   letters: letters,
+                                   type: :offer,
                           score: 0,
                           ability: "&nbsp",
                           cost: i })

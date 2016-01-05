@@ -2,12 +2,7 @@
   <div class="row placeholder" >
     <% 7.times do |place| %>
     <div class="card-holder">
-      <div id='<%= "place#{place}" %>'  class="card color-empty col-xs-1">
-	<div class="row score"><%=raw "&nbsp" %></div>			   
-	<div class="row letter"><%=raw "&nbsp" %></div>
-	<div class="row ability"><%=raw "&nbsp" %></div>
-	<div class="row cost"><%=raw "&nbsp" %></div>
-      </div>
+       <%= render partial: 'card' , :locals => { :card => OfferCard.empty } %>
     </div>
   <%end %>
   </div>

@@ -12,6 +12,9 @@
 .color-0 {
     background-color: darkgray;
 }
+.color-empty {
+    background-color: black;
+}
 
 .color-2 {
     background-color: darkorange;

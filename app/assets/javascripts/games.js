@@ -1,6 +1,6 @@
 $(document).ready( function(){
     $(".hand-holder > .card " ).each(function(){
-	$(this).draggable({revert: true });
+	$(this).draggable();
     });
 });
 
@@ -9,11 +9,7 @@ $(document).ready( function(){
 	$(this).droppable({
 	    greedy: true,
 	    drop: function(event,ui){
-		var a = ui.draggable.parent().html();
-		var b = $(this).parent().html();
-		alert($(this).parent().html());
-		$(this).parent().html(a);
-		ui.draggable.html(b);
+		alert("drop");
 	    }
 	});
     });
