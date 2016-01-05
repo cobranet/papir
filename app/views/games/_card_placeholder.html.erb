@@ -1,12 +1,14 @@
 <div class="row place row-centered">
   <div class="row placeholder" >
-  <% 7.times do |place| %>
-  <div class="card card-centered color-empty col-xs-1">
-    <div class="row score"><%=raw "&nbsp" %></div>			   
-    <div class="row letter"><%=raw "&nbsp" %></div>
-    <div class="row ability"><%=raw "&nbsp" %></div>
-    <div class="row cost"><%=raw "&nbsp" %></div>
-  </div>  
+    <% 7.times do |place| %>
+    <div class="card-holder">
+      <div id='<%= "place#{place}" %>'  class="card color-empty col-xs-1">
+	<div class="row score"><%=raw "&nbsp" %></div>			   
+	<div class="row letter"><%=raw "&nbsp" %></div>
+	<div class="row ability"><%=raw "&nbsp" %></div>
+	<div class="row cost"><%=raw "&nbsp" %></div>
+      </div>
+    </div>
   <%end %>
   </div>
 </div>

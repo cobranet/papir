@@ -1,0 +1,20 @@
+$(document).ready( function(){
+    $(".hand > .card" ).each(function(){
+	$(this).draggable({revert: 'invalid'});
+    });
+});
+
+$(document).ready( function(){
+    $(".placeholder > .card").each(function(){
+	$(this).droppable({
+	    drop: function(event,ui){
+		$(this).html(ui.draggable.html());
+		$(this).removeAttr('class');
+		$(this).attr("class",ui.draggable.attr("class"));
+		$(this).draggable();
+		$(this).droppable( "option", "disabled", true );
+		ui.draggable.remove(); 
+	    }
+	});
+    });
+});

@@ -34,3 +34,6 @@ F,G,H,J,J,K,Q,Q,Q,V,W,X,X,X,Y,Z
 Green "Y" (5 cent cost): You may trash the top card from two other piles
 Brown "V" (7 cent cost): Attack: Words cannot be more than five letters
 Teal "J" (8 cent cost): If the word is 7 letters or longer, +3 cents
+The letter K ability says "after scoring, put one used card back on your deck"...does this include the letter K card, or does it have to be a different one?
+
+* Scores ??
